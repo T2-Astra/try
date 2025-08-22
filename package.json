@@ -1,0 +1,17 @@
+{
+  "name": "contribution-project",
+  "version": "1.0.0",
+  "description": "A project to demonstrate GitHub contributions",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Open index.html in your browser\""
+  },
+  "keywords": [
+    "github",
+    "contributions",
+    "demo"
+  ],
+  "author": "",
+  "license": "MIT"
+}
