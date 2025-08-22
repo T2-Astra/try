@@ -1,0 +1,121 @@
+/* Dashboard Specific Styles */
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    flex: 1;
+    margin: 0 0.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card:first-child {
+    margin-left: 0;
+}
+
+.stat-card:last-child {
+    margin-right: 0;
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0.5rem 0 0;
+}
+
+/* Activity List Styles */
+.recent-activity {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-type {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    min-width: 80px;
+    text-align: center;
+}
+
+.activity-type.commit {
+    background-color: #e6f6e6;
+    color: #2ea44f;
+}
+
+.activity-type.pull-request {
+    background-color: #e6f1ff;
+    color: #0366d6;
+}
+
+.activity-type.issue {
+    background-color: #ffeef0;
+    color: #d73a49;
+}
+
+.activity-desc {
+    flex: 1;
+}
+
+.activity-time {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-stats {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        margin: 0 0 1rem 0;
+    }
+    
+    .activity-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .activity-type {
+        margin-bottom: 0.5rem;
+    }
+    
+    .activity-time {
+        margin-top: 0.5rem;
+        align-self: flex-end;
+    }
+}

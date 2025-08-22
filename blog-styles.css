@@ -1,0 +1,49 @@
+/* Blog Specific Styles */
+article {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+article ul {
+    padding-left: 1.5rem;
+}
+
+article li {
+    margin-bottom: 0.5rem;
+}
+
+/* Project Specific Styles */
+.project {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 4px solid #333;
+}
+
+.project h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.tech-stack {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+}

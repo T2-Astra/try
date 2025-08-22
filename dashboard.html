@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Contribution Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contribution Dashboard</h1>
+    </header>
+    <main>
+        <section class="dashboard-stats">
+            <div class="stat-card">
+                <h3>Total Contributions</h3>
+                <p class="stat-value">1,245</p>
+            </div>
+            <div class="stat-card">
+                <h3>Current Streak</h3>
+                <p class="stat-value">14 days</p>
+            </div>
+            <div class="stat-card">
+                <h3>Longest Streak</h3>
+                <p class="stat-value">28 days</p>
+            </div>
+        </section>
+        
+        <section id="contribution-visualization">
+            <!-- Visualization will be inserted here by JavaScript -->
+        </section>
+        
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+            <ul class="activity-list">
+                <li class="activity-item">
+                    <span class="activity-type commit">Commit</span>
+                    <span class="activity-desc">Added dashboard visualization</span>
+                    <span class="activity-time">2 hours ago</span>
+                </li>
+                <li class="activity-item">
+                    <span class="activity-type pull-request">Pull Request</span>
+                    <span class="activity-desc">Merged feature/blog-page into main</span>
+                    <span class="activity-time">1 day ago</span>
+                </li>
+                <li class="activity-item">
+                    <span class="activity-type issue">Issue</span>
+                    <span class="activity-desc">Fixed navigation responsiveness</span>
+                    <span class="activity-time">2 days ago</span>
+                </li>
+            </ul>
+        </section>
+        
+        <p><a href="index.html">Back to Home</a></p>
+    </main>
+    <script src="script.js"></script>
+    <script src="api-mock.js"></script>
+    <script src="visualization.js"></script>
+</body>
+</html>

@@ -6,6 +6,10 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Import additional styles */
+@import url('blog-styles.css');
+@import url('dashboard-styles.css');
+
 header {
     background-color: #333;
     color: #fff;
