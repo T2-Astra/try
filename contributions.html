@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        
+        .stat-card h3 {
+            margin-top: 0;
+            color: #24292e;
+            font-size: 1.2rem;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2ea44f;
+            margin: 1rem 0;
+        }
+        
+        .stat-description {
+            color: #586069;
+            font-size: 0.9rem;
+        }
+        
+        .visualization-section {
+            margin: 3rem 0;
+        }
+        
+        .visualization-section h2 {
+            margin-bottom: 1.5rem;
+            color: #24292e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contributions.html" class="active">Contributions</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1>GitHub Contribution Statistics</h1>
+        
+        <section class="stats-container">
+            <div class="stat-card">
+                <h3>Total Contributions</h3>
+                <div class="stat-value">847</div>
+                <p class="stat-description">All-time contributions across all repositories</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Current Streak</h3>
+                <div class="stat-value">12</div>
+                <p class="stat-description">Consecutive days with contributions</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Longest Streak</h3>
+                <div class="stat-value">28</div>
+                <p class="stat-description">Longest consecutive contribution streak</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Repositories</h3>
+                <div class="stat-value">24</div>
+                <p class="stat-description">Public repositories with contributions</p>
+            </div>
+        </section>
+        
+        <section class="visualization-section">
+            <h2>Weekly Activity</h2>
+            <div id="contribution-visualization"></div>
+        </section>
+        
+        <section class="visualization-section">
+            <h2>Yearly Activity</h2>
+            <div id="contribution-heatmap"></div>
+        </section>
+        
+        <section>
+            <h2>Contribution Breakdown</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Count</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Code Commits</td>
+                        <td>523</td>
+                        <td>61.7%</td>
+                    </tr>
+                    <tr>
+                        <td>Pull Requests</td>
+                        <td>142</td>
+                        <td>16.8%</td>
+                    </tr>
+                    <tr>
+                        <td>Issues</td>
+                        <td>98</td>
+                        <td>11.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Code Reviews</td>
+                        <td>84</td>
+                        <td>9.9%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 GitHub Contribution Tracker. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="visualization.js"></script>
+    <script src="contribution-heatmap.js"></script>
+</body>
+</html>
