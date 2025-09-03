@@ -6,6 +6,6 @@ This is a repository for tracking and visualizing contributions. The project inc
 
 - Contribution tracking
 - Data visualization
-- User dashboard
+- User dashboards
 
 ## Getting Startedss
