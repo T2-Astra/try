@@ -10,4 +10,3 @@ This is a repository for tracking and visualizing contributions. The project inc
 
 ## Getting Started
 
-Check out the documentation for more information on how to use this project.
