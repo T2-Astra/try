@@ -8,4 +8,4 @@ This is a repository for tracking and visualizing contributions. The project inc
 - Data visualization
 - User dashboard
 
-## Getting Startedsss
+## Getting Startedss
